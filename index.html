@@ -3,41 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Student ID Card</title>
+  <title>Summary Report</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="id-card">
+  <div class="report">
 
-    <div class="card-header">
-      <h2>YOUR COLLEGE NAME</h2>
-      <p>Student Identity Card</p>
-    </div>
-
-    <div class="photo-wrapper">
-      <!-- Replace src with your own photo, e.g. "me.jpg" -->
-      <img src="https://via.placeholder.com/100" alt="Student Photo" />
-    </div>
-
-    <div class="card-body">
-      <h3>Patrick</h3>
-      <p class="course">B.Tech - Computer Science</p>
-
-      <div class="details">
-        <p><span>Roll No:</span> 2400000000</p>
-        <p><span>Branch:</span> CSE</p>
-        <p><span>Year:</span> 1st Year</p>
-        <p><span>DOB:</span> 01-01-2006</p>
-        <p><span>Phone:</span> +91 98765 43210</p>
+    <!-- Header -->
+    <header class="report-header">
+      <h1>Summary Report</h1>
+      <p>Project / Subject Name</p>
+      <div class="meta">
+        <span>Prepared by: Patrick</span>
+        <span>Date: 10 Oct 2026</span>
       </div>
-    </div>
+    </header>
 
-    <div class="barcode"></div>
+    <!-- Overview -->
+    <section class="section">
+      <h2>1. Overview</h2>
+      <p>
+        Write a short introduction here. Explain what this report is about,
+        why it was made, and what it covers in two or three lines.
+      </p>
+    </section>
 
-    <div class="card-footer">
-      Valid till: 2028 | If found, please return to college
-    </div>
+    <!-- Stats -->
+    <section class="section">
+      <h2>2. Key Highlights</h2>
+      <div class="stats">
+        <div class="stat-card">
+          <h3>120</h3>
+          <p>Total Items</p>
+        </div>
+        <div class="stat-card">
+          <h3>85%</h3>
+          <p>Completed</p>
+        </div>
+        <div class="stat-card">
+          <h3>18</h3>
+          <p>In Progress</p>
+        </div>
+        <div class="stat-card">
+          <h3>5</h3>
+          <p>Pending</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Table -->
+    <section class="section">
+      <h2>3. Detailed Summary</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Task</th>
+            <th>Status</th>
+            <th>Remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Research</td>
+            <td><span class="badge done">Done</span></td>
+            <td>Completed on time</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Design</td>
+            <td><span class="badge progress">In Progress</span></td>
+            <td>Needs final review</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Testing</td>
+            <td><span class="badge pending">Pending</span></td>
+            <td>Starts next week</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Findings -->
+    <section class="section">
+      <h2>4. Key Findings</h2>
+      <ul class="findings">
+        <li>First important finding goes here.</li>
+        <li>Second important finding goes here.</li>
+        <li>Third important finding goes here.</li>
+      </ul>
+    </section>
+
+    <!-- Conclusion -->
+    <section class="section">
+      <h2>5. Conclusion</h2>
+      <p>
+        Write the final summary and any recommendations or next steps here.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="report-footer">
+      <p>&copy; 2026 Summary Report | Prepared by Patrick</p>
+    </footer>
 
   </div>
 
