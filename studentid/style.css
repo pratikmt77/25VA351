@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* ---------- Card ---------- */
+.id-card {
+  width: 320px;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
+}
+
+.id-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+/* ---------- Header ---------- */
+.card-header {
+  background: linear-gradient(135deg, #0f2027, #2c5364);
+  color: #fff;
+  text-align: center;
+  padding: 18px 10px 50px;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.card-header p {
+  font-size: 11px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+/* ---------- Photo ---------- */
+.photo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -45px;
+}
+
+.photo-wrapper img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  background: #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Body ---------- */
+.card-body {
+  padding: 15px 20px 10px;
+  text-align: center;
+}
+
+.card-body h3 {
+  font-size: 20px;
+  color: #1e3c72;
+}
+
+.card-body .course {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.details {
+  text-align: left;
+  font-size: 13px;
+  border-top: 1px dashed #ccc;
+  padding-top: 12px;
+}
+
+.details p {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  color: #333;
+}
+
+.details span {
+  font-weight: 600;
+  color: #555;
+}
+
+/* ---------- Barcode ---------- */
+.barcode {
+  height: 40px;
+  margin: 14px 20px 8px;
+  background: repeating-linear-gradient(
+    90deg,
+    #000 0,
+    #000 2px,
+    #fff 2px,
+    #fff 4px,
+    #000 4px,
+    #000 5px,
+    #fff 5px,
+    #fff 8px
+  );
+}
+
+/* ---------- Footer ---------- */
+.card-footer {
+  background: #1e3c72;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  padding: 8px;
+  letter-spacing: 0.5px;
+}
