@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 30px 15px;
+}
+
+/* ---------- Main container ---------- */
+.report {
+  max-width: 850px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Header ---------- */
+.report-header {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.report-header h1 {
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.report-header p {
+  opacity: 0.85;
+  margin-top: 5px;
+}
+
+.meta {
+  margin-top: 15px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Sections ---------- */
+.section {
+  padding: 25px 35px 5px;
+}
+
+.section h2 {
+  color: #1e3c72;
+  font-size: 20px;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e3e8f0;
+}
+
+/* ---------- Stats cards ---------- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.stat-card {
+  background: #f5f8ff;
+  border-left: 4px solid #2a5298;
+  border-radius: 8px;
+  padding: 18px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.stat-card h3 {
+  font-size: 28px;
+  color: #1e3c72;
+}
+
+.stat-card p {
+  font-size: 13px;
+  color: #666;
+}
+
+/* ---------- Table ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+th {
+  background: #1e3c72;
+  color: #fff;
+  text-align: left;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e3e8f0;
+}
+
+tbody tr:hover {
+  background: #f5f8ff;
+}
+
+/* ---------- Status badges ---------- */
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge.done {
+  background: #d4f5dd;
+  color: #1a7a38;
+}
+
+.badge.progress {
+  background: #fff3cd;
+  color: #9a6b00;
+}
+
+.badge.pending {
+  background: #fde0e0;
+  color: #b02a2a;
+}
+
+/* ---------- Findings list ---------- */
+.findings {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.findings li {
+  margin-bottom: 6px;
+}
+
+/* ---------- Footer ---------- */
+.report-footer {
+  background: #1e3c72;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  padding: 15px;
+  margin-top: 25px;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 600px) {
+  .section {
+    padding: 20px 18px 5px;
+  }
+
+  .report-header h1 {
+    font-size: 24px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}
